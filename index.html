@@ -19,28 +19,58 @@
             <p id="darkModeName">dark mode</p>
         </div>
         <div class="container" id="container">
-            <h1>Sign in</h1>
-            <div class="icon-container" id="icon-container">
-                <i class="fa fa-brands fa-facebook-f"></i>
-                <i class="fa fa-brands fa-google"></i>
-                <i class="fa fa-brands fa-twitter"></i>
+            <div class="container" id="container-login">
+                <h1>Sign In</h1>
+                <div class="icon-container" id="icon-container-login">
+                    <i class="fa fa-brands fa-facebook-f"></i>
+                    <i class="fa fa-brands fa-google"></i>
+                    <i class="fa fa-brands fa-twitter"></i>
+                </div>
+                <p>or use your account</p>
+                <form class="form-div" id="form-login-login">
+                    <div class="form-input" id="form-input">
+                        <label class="hide-label" for="username" id="usernameLabelLogin">Username</label>
+                        <input type="text" placeholder="Username" id="usernameLogin" />
+                    </div>
+                    <div class="form-input" id="form-input">
+                        <label class="hide-label" for="password" id="passwordLabelLogin">Password</label>
+                        <input type="password" placeholder="Password" id="passwordLogin" />
+                    </div>
+                    <div class="form-input" id="form-input">
+                        <button type="register">Login</button>
+                    </div>
+                    <p>need an account? <a href="#" id="register">Register</a></p>
+                    <p><a href="#">forgot password?</a></p>
+                </form>
             </div>
-            <p>or use your account</p>
-            <form class="form-div" id="form-login">
-                <div class="form-input" id="form-input">
-                    <label class="hide-label" data-aos="fade-up" for="username" id="usernameLabel">Username</label>
-                    <input type="text" placeholder="username" id="username"/>
+            <div class="container" id="container-register">
+                <h1>Registration</h1>
+                <div class="icon-container" id="icon-container-register">
+                    <i class="fa fa-brands fa-facebook-f"></i>
+                    <i class="fa fa-brands fa-google"></i>
+                    <i class="fa fa-brands fa-twitter"></i>
                 </div>
-                <div class="form-input" id="form-input">
-                    <label class="hide-label" data-aos="fade-up" for="password" id="passwordLabel">Password</label>
-                    <input type="password" placeholder="password" id="password"/>
-                </div>
-                <div class="form-input" id="form-input">
-                    <button>Login</button>
-                </div>
-                <p class="para">need an account? <a href="#">Register</a></p>
-                <p class="para"><a href="#">forgot password?</a></p>
-            </form>
+                <p>or use your email for registration</p>
+                <form class="form-div" id="form-login-register">
+                    <div class="form-input" id="form-input">
+                        <label class="hide-label" for="username" id="usernameLabelRegister">Username</label>
+                        <input type="text" placeholder="Username" id="usernameRegister" />
+                    </div>
+                    <div class="form-input" id="form-input">
+                        <label class="hide-label" for="password" id="passwordLabelRegister">Password</label>
+                        <input type="password" placeholder="Password" id="passwordRegister" />
+                    </div>
+                    <div class="form-input" id="form-input">
+                        <label class="hide-label" for="email" id="emailLabelRegister">Email</label>
+                        <input type="email" placeholder="Email" id="emailRegister" />
+                    </div>
+                    <div class="form-input" id="form-input">
+                        <button type="submit">Register</button>
+                    </div>
+                    <p>already have an account? <a href="#" id="login">Login</a></p>
+                    <p><a href="#">need an email address?</a></p>
+                </form>
+            </div>
         </div>
     </div>
 

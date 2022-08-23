@@ -1,49 +1,80 @@
-const body = document.querySelector('body');
+
 const form = document.querySelector('#form');
-const username = document.querySelector('#username');
-const usernameLabel = document.querySelector('#usernameLabel');
-const password = document.querySelector('#password');
-const passwordLabel = document.querySelector('#passwordLabel');
+const usernameLogin = document.querySelector('#usernameLogin');
+const usernameLabelLogin = document.querySelector('#usernameLabelLogin');
+const passwordLogin = document.querySelector('#passwordLogin');
+const passwordLabelLogin = document.querySelector('#passwordLabelLogin');
+
+const usernameRegister = document.querySelector('#usernameRegister');
+const usernameLabelRegister = document.querySelector('#usernameLabelRegister');
+const passwordRegister = document.querySelector('#passwordRegister');
+const passwordLabelRegister = document.querySelector('#passwordLabelRegister');
+const emailRegister = document.querySelector('#emailRegister');
+const emailLabelRegister = document.querySelector('#emailLabelRegister');
+
 const darkModeToggle = document.querySelector('#darkModeToggle');
 const darkModeName = document.querySelector('#darkModeName');
 const mainContainer = document.querySelector('#main-container');
-const formLogin = document.querySelector('#form-login');
+const formLogin = document.querySelector('#form-login-login');
+const formRegister = document.querySelector('#form-login-register');
 const container = document.querySelector('#container');
-const iconContainer = document.querySelector('icon-container');
-// const formInput = document.querySelectorAll('.form-input');
+const containerLogin = document.querySelector('#container-login');
+const containerRegister = document.querySelector('#container-register');
+const login = document.querySelector('#login');
+const register = document.querySelector('#register');
 
-username.addEventListener('click', () => {
-    username.placeholder = '';
-    usernameLabel.classList.remove('hide-label');
-    usernameLabel.classList.add('show-label');
+usernameLogin.addEventListener('click', () => {
+    usernameLogin.placeholder = '';
+    usernameLabelLogin.classList.add('show-label');
 });
 
-password.addEventListener('click', () => {
-    password.placeholder = '';
-    passwordLabel.classList.remove('hide-label');
-    passwordLabel.classList.add('show-label');
+passwordLogin.addEventListener('click', () => {
+    passwordLogin.placeholder = '';
+    passwordLabelLogin.classList.add('show-label');
 });
+
+usernameRegister.addEventListener('click', () => {
+    usernameRegister.placeholder = '';
+    usernameLabelRegister.classList.add('show-label');
+});
+
+passwordRegister.addEventListener('click', () => {
+    passwordRegister.placeholder = '';
+    passwordLabelRegister.classList.add('show-label');
+});
+
+emailRegister.addEventListener('click', () => {
+    emailRegister.placeholder = '';
+    emailLabelRegister.classList.add('show-label');
+});
+
 
 darkModeToggle.addEventListener('click', () => {
-    darkModeToggle.classList.toggle('fa-toggle-off');
     darkModeToggle.classList.toggle('fa-toggle-on');
     darkModeNameChange();
     formInputDark()
     darkMode();
 });
 
-function darkMode() {
+register.addEventListener('click', () => {
+    containerLogin.style.display = 'none';
+    containerRegister.style.display = 'flex';
+});
 
+login.addEventListener('click', () => {
+    containerLogin.style.display = 'flex';
+    containerRegister.style.display = 'none';
+});
+
+function darkMode() {
     mainContainer.classList.toggle('main-container-dark');
     formLogin.classList.toggle('form-div-dark');
+    formRegister.classList.toggle('form-div-dark');
     container.classList.toggle('container-dark');
-    iconContainer.classList.toggle('icon-container-dark');
-
 }
 
 function darkModeNameChange() {
-
-    if (darkModeName.innerText === 'dark mode') {
+    if ( darkModeName.innerText === 'dark mode' ) {
         darkModeName.innerText = 'light mode';
     } else {
         darkModeName.innerText = 'dark mode';
@@ -51,17 +82,10 @@ function darkModeNameChange() {
 }
 
 function formInputDark() {
-
     const allFormInput = document.querySelectorAll('.form-input');
-    for (let i = 0; i < allFormInput.length; i++) {
+    for ( let i = 0; i < allFormInput.length; i++ ) {
     allFormInput[i].classList.toggle('form-input-dark');
     }
-
-    const allPara = document.querySelectorAll('.para');
-    for (let i = 0; i < allPara.length; i++) {
-    allPara[i].classList.toggle('para-dark');
-    }
 }
-
 
 AOS.init();
