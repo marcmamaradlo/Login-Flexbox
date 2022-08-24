@@ -16,18 +16,25 @@
 <body>
     
     <div class="main-container" id="main-container">
+
+        <!-- Dark Mode Toggler Start-->
         <div class="dark-mode">
             <i class="fas fa-solid fa-toggle-off" id="darkModeToggle"></i>
             <p id="darkModeName">dark mode</p>
         </div>
+        <!-- Dark Mode Toggler End-->
+
+        <!-- Main Content Start -->
         <div class="container" id="container">
+
+            <!-- Password Recovery Form Start (Absolute Position)-->
             <div class="forgot-password hide-label" id="forgot-password">
                 <div class="close-icon" id="close-icon">
                     <span class="material-symbols-outlined close-icon">close</span>
                 </div>
                 <form class="form-div-recovery" id="form-login-login">
                     <div class="password-recovery-input" id="password-recovery-input">
-                        <label for="account-recovery">please enter your email address</label>
+                        <label for="account-recovery">enter email address below</label>
                         <input type="email" placeholder="sample@email.com" id="account-recovery" />
                     </div>
                     <div class="password-recovery-input" id="password-recovery-input">
@@ -37,6 +44,9 @@
                     <p>the email might take a few minutes to send</p>
                 </form>
             </div>
+            <!-- Password Recovery Form End -->
+
+            <!-- Sign In Form Start -->
             <div class="container" id="container-login">
                 <h1>Sign In</h1>
                 <div class="icon-container" id="icon-container-login">
@@ -61,6 +71,9 @@
                     <p><a href="#" id="forgot-password-text">forgot password?</a></p>
                 </form>
             </div>
+            <!-- Sign In Form End -->
+
+            <!-- Registration Form Start -->
             <div class="container" id="container-register">
                 <h1>Registration</h1>
                 <div class="icon-container" id="icon-container-register">
@@ -86,10 +99,12 @@
                         <button type="submit">Register</button>
                     </div>
                     <p>already have an account? <a href="#" id="login">Login</a></p>
-                    <p><a href="#">need an email address?</a></p>
+                    <p><a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">need an email address?</a></p>
                 </form>
             </div>
+            <!-- Registration Form End -->
         </div>
+        <!-- Main Content End -->
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
