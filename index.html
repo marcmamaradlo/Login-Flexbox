@@ -7,6 +7,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
     <title>Login</title>
@@ -19,6 +21,22 @@
             <p id="darkModeName">dark mode</p>
         </div>
         <div class="container" id="container">
+            <div class="forgot-password hide-label" id="forgot-password">
+                <div class="close-icon" id="close-icon">
+                    <span class="material-symbols-outlined close-icon">close</span>
+                </div>
+                <form class="form-div-recovery" id="form-login-login">
+                    <div class="password-recovery-input" id="password-recovery-input">
+                        <label for="account-recovery">please enter your email address</label>
+                        <input type="email" placeholder="sample@email.com" id="account-recovery" />
+                    </div>
+                    <div class="password-recovery-input" id="password-recovery-input">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <p>we will send you an email with a link to reset your password</p>
+                    <p>the email might take a few minutes to send</p>
+                </form>
+            </div>
             <div class="container" id="container-login">
                 <h1>Sign In</h1>
                 <div class="icon-container" id="icon-container-login">
@@ -40,7 +58,7 @@
                         <button type="register">Login</button>
                     </div>
                     <p>need an account? <a href="#" id="register">Register</a></p>
-                    <p><a href="#">forgot password?</a></p>
+                    <p><a href="#" id="forgot-password-text">forgot password?</a></p>
                 </form>
             </div>
             <div class="container" id="container-register">

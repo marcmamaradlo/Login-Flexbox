@@ -22,6 +22,10 @@ const containerLogin = document.querySelector('#container-login');
 const containerRegister = document.querySelector('#container-register');
 const login = document.querySelector('#login');
 const register = document.querySelector('#register');
+const forgotPasswordText = document.querySelector('#forgot-password-text')
+
+const forgotPassword = document.querySelector('#forgot-password');
+const closeIcon = document.querySelector('#close-icon');
 
 usernameLogin.addEventListener('click', () => {
     usernameLogin.placeholder = '';
@@ -87,5 +91,14 @@ function formInputDark() {
     allFormInput[i].classList.toggle('form-input-dark');
     }
 }
+
+forgotPasswordText.addEventListener('click', () => {
+    forgotPassword.classList.toggle('show-label');
+});
+
+closeIcon.addEventListener('click', () => {
+    forgotPassword.classList.remove('show-label')
+    forgotPassword.classList.add('hide-label');
+});
 
 AOS.init();

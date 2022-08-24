@@ -235,6 +235,93 @@ html, body {
     visibility: visible;
 }
 
+.forgot-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+    background-color: rgba(255, 255, 255);
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: -10px 6px 20px rgb(120, 120, 120);
+}
+
+.form-div-recovery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.form-div-recovery p {
+    color: rgb(120, 120, 120);
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.password-recovery-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.password-recovery-input label {
+    font-size: 14px;
+}
+
+.password-recovery-input input {
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgb(120, 120, 120);;
+    width: 20rem;
+    margin: 1rem;
+    background-color: transparent;
+}
+
+.password-recovery-input input:focus {
+    outline: 0 none;
+}
+
+.password-recovery-input button {
+    width: 10rem;
+    padding: 5px;
+    border: 1px solid rgb(120, 120, 120);;
+    border-radius: 25px;
+}
+
+.password-recovery-input button:hover {
+    background-color: lightgray;
+    color: white;
+    transition: 500ms;
+}
+
+.close-icon span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 1rem;
+    font-size: 16px;
+    border: 1px solid rgb(120, 120, 120);;
+    padding: 2px 3px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: rgb(120, 120, 120);;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
 #container-register{
     display: none;
 }
@@ -255,6 +342,10 @@ html, body {
     .form-div-dark {
         width: 100%;
     }
+
+    .forgot-password {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -272,6 +363,14 @@ html, body {
 
     .form-div-dark {
         width: 100%;
+    }
+
+    .forgot-password {
+        width: 90%;
+    }
+
+    .form-div-recovery input{
+        width: 90%;
     }
 
 }
