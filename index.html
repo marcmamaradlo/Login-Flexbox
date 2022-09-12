@@ -1,114 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="app.css">
-    <title>Login</title>
-</head>
-<body>
-    
-    <div class="main-container" id="main-container">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+		</style>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="app.css" />
+		<title>Login</title>
+	</head>
+	<body>
+		<div class="main-container" id="main-container">
+			<!-- Dark Mode Toggler Start-->
+			<div class="dark-mode">
+				<i class="fas fa-solid fa-toggle-off" id="darkModeToggle"></i>
+				<p id="darkModeName">dark mode</p>
+			</div>
+			<!-- Dark Mode Toggler End-->
 
-        <!-- Dark Mode Toggler Start-->
-        <div class="dark-mode">
-            <i class="fas fa-solid fa-toggle-off" id="darkModeToggle"></i>
-            <p id="darkModeName">dark mode</p>
-        </div>
-        <!-- Dark Mode Toggler End-->
+			<!-- Main Content Start -->
+			<div class="container" id="container">
+				<!-- Password Recovery Form Start (Absolute Position)-->
+				<div class="forgot-password hide-label" id="forgot-password">
+					<div class="close-icon" id="close-icon">
+						<span class="material-symbols-outlined close-icon">close</span>
+					</div>
+					<form class="form-div-recovery" id="form-login-login">
+						<div class="password-recovery-input" id="password-recovery-input">
+							<label for="account-recovery">enter email address below</label>
+							<input type="email" placeholder="sample@email.com" id="account-recovery"/>
+						</div>
+						<div class="password-recovery-input" id="password-recovery-input">
+							<button type="submit">Submit</button>
+						</div>
+						<p>we will send you an email with a link to reset your password</p>
+						<p>the email might take a few minutes to send</p>
+					</form>
+				</div>
+				<!-- Password Recovery Form End -->
 
-        <!-- Main Content Start -->
-        <div class="container" id="container">
+				<!-- End User Agreement Start-->
+				<div class="EULA hide-label" id="EULA">
+					<!-- <div class="close-icon">
+						<span class="material-symbols-outlined close-icon">close</span>
+					</div> -->
+					<div class="EULA-div">
+							<h3>End User License Agreement</h3>
+							<p>(work in progress)</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis perferendis, ipsa reprehenderit eveniet nobis voluptatibus architecto quam recusandae. Sed alias voluptatibus assumenda vero inventore, cum quis rerum fugiat eligendi animi ducimus illo minus voluptates dicta, minima consectetur sint nulla tempore nam fuga quam aspernatur? Odio, dolorem molestias fuga reprehenderit itaque, ipsum libero maiores illo praesentium quasi explicabo maxime dolore suscipit nobis. Voluptas id voluptates error, similique ipsum architecto accusantium, harum suscipit expedita natus animi rerum repellendus hic obcaecati aut vel ullam ab illo maxime aliquam tenetur. Eum porro iusto voluptatibus inventore quam laboriosam excepturi eaque! Enim incidunt iste error sequi consequuntur repudiandae molestias eos voluptas esse vero vel nemo voluptate laboriosam explicabo iusto pariatur labore quia reprehenderit a et magni perspiciatis atque, nisi natus. Corrupti amet expedita, est, dolorem omnis soluta iure rerum veniam officiis quibusdam quae, minus inventore velit molestias molestiae. Similique iusto atque praesentium est, quae repudiandae ex! Pariatur sit asperiores eaque aliquam quasi dolore? Neque consectetur cumque harum magni ipsa enim. Asperiores esse laudantium ducimus, recusandae quos tenetur laboriosam nemo cumque vel praesentium sit dolorem, consequatur optio fugit! Sunt animi in neque rerum sit veniam autem accusantium voluptates ipsam eligendi repudiandae harum, amet explicabo nemo! Nihil possimus est nostrum sit beatae magnam culpa nulla deserunt et vero nesciunt voluptate hic, neque excepturi saepe! Et vel esse id ipsa, itaque, exercitationem voluptatum atque obcaecati doloremque iusto ducimus, ad culpa inventore molestiae laboriosam aperiam dicta ullam possimus ratione tempora reiciendis impedit cumque cupiditate. Quasi repellat ut praesentium asperiores sunt enim maiores consectetur corrupti? Harum modi aliquam, voluptatem corrupti hic ex ut cumque ab mollitia iure necessitatibus ullam unde, accusamus beatae voluptas sapiente autem, nisi fugiat. Quibusdam quo cumque, aperiam tenetur atque omnis eligendi, commodi repudiandae obcaecati ipsa necessitatibus a recusandae pariatur. Corporis, ducimus doloremque? Deserunt similique dolores exercitationem repudiandae labore asperiores, odit sit rem. Illum porro mollitia est quas doloribus suscipit nulla quo quos facilis eveniet modi necessitatibus odit ea alias omnis vel perspiciatis debitis eligendi animi, veritatis nihil repudiandae! Sunt maxime aut voluptas rerum, in corrupti alias minima, quam, maiores obcaecati provident repudiandae atque aliquid. Ut atque, dolorum officiis soluta fuga, velit reprehenderit provident magni fugiat cum corrupti odit maxime temporibus voluptatum quidem minus ipsam deserunt quod, id delectus quam eos. Possimus amet debitis consequatur veniam, nisi soluta. Consequuntur, neque facere non quisquam atque repellendus recusandae optio eius architecto voluptatem eos incidunt eaque! Hic maxime numquam ad, iste quo ea autem nemo nisi reprehenderit possimus voluptate perspiciatis, id unde dolorum suscipit ut quam odio? Eveniet assumenda et voluptatibus provident culpa doloremque delectus facere sunt fuga dolore. Voluptatem incidunt quasi, quidem dolores a delectus quae illum, aperiam praesentium beatae consequuntur nemo, cupiditate esse? Repudiandae accusamus ullam at nihil, provident reiciendis sit deleniti veniam maiores quisquam architecto dolores aliquam obcaecati nobis, ducimus consectetur praesentium facere qui nisi, voluptatibus placeat ut atque vitae. Eveniet facilis provident vero rerum? Blanditiis repellat, eligendi, reiciendis ipsa consequuntur quidem labore iure doloremque error laborum modi asperiores ea cum saepe amet! Numquam blanditiis, consequuntur maxime rerum veritatis eligendi atque iste quo voluptas sint voluptatem enim, aliquid expedita autem! Ducimus optio neque deserunt dignissimos porro fugiat sequi labore iure sapiente, ipsum totam voluptas pariatur, magni tempora officiis repellat harum dolores atque officia. Iste, quod. Beatae illum quas minus, numquam velit dolor maxime doloremque reiciendis. Aspernatur, eum quisquam eos inventore sed, saepe dicta fugit sint magni eaque corporis maiores animi nisi, expedita impedit eius excepturi? Perferendis incidunt, dolorum cupiditate perspiciatis consequatur officiis quae, laborum quibusdam maiores eveniet id sit dolores mollitia vitae sunt. Modi quibusdam, voluptatibus dolorum nesciunt obcaecati cumque explicabo suscipit fugiat labore officia, similique praesentium non itaque sunt nobis earum ut dolores ea voluptatem, deserunt ad voluptas recusandae cupiditate tenetur! Voluptate et alias corrupti aliquid eos sunt ipsam, necessitatibus eaque corporis error velit quas delectus praesentium qui voluptatibus distinctio libero deserunt fugiat laboriosam? Explicabo quia corrupti at. Repellat illum qui nulla ut ex perferendis eaque eius iure quasi architecto et impedit, distinctio quidem, amet aperiam delectus maiores perspiciatis quisquam adipisci aliquid. At, soluta odit. Voluptas quae quidem alias tempore corporis dolore dolores maxime impedit? Ut eius unde facere officiis. Possimus ipsam perspiciatis dignissimos, minima eaque vel temporibus earum velit esse commodi facere molestias error labore necessitatibus. Aperiam reprehenderit facere mollitia quas deserunt quos dolorem tenetur maxime excepturi molestiae hic, odio totam. Voluptatum at quaerat magnam iusto corporis error eligendi. Tempora doloremque alias aspernatur, corporis voluptate sed, ipsa vero minima earum quas ad sapiente commodi! Aperiam repudiandae maiores odio eum molestiae sequi animi quasi autem blanditiis repellendus quia quaerat corrupti commodi excepturi, dicta enim tenetur facere rerum quos eos inventore eveniet, pariatur neque? Corrupti recusandae voluptates repellendus veritatis nemo doloremque ea reprehenderit soluta voluptatum reiciendis esse est ducimus dolorem quibusdam numquam, eveniet voluptatem assumenda rerum non illo culpa optio error officia! Neque dolorum quod, possimus blanditiis magnam dolor ab amet quos laudantium enim. Quam atque, quidem, molestiae assumenda consectetur voluptatum rerum commodi similique deleniti officia aliquid deserunt perspiciatis quas ipsa voluptatibus repellendus eligendi? Sapiente voluptas tempora repudiandae blanditiis consequatur, perferendis facilis dignissimos! Culpa doloremque non aliquid debitis eum necessitatibus, illum amet, eaque, repellendus dignissimos architecto cupiditate enim. Quis rerum facere laudantium nostrum qui eius, natus quaerat id est aliquid animi voluptatum consequatur atque perferendis fuga incidunt at facilis eveniet quisquam quia vero minima? Beatae dolores velit explicabo hic nobis ipsam officia rerum, corrupti deserunt assumenda quae officiis vel. Quaerat doloribus voluptatem minus ex magni illo unde nobis blanditiis placeat sit eligendi, doloremque dolores tenetur nulla corrupti libero sunt nesciunt mollitia veritatis quibusdam! Incidunt voluptatem ut sapiente eligendi nemo, blanditiis voluptas? Praesentium, aliquam reiciendis! Pariatur quis laboriosam, aliquid, dolorem aperiam sequi repellendus praesentium rem ex eum, ipsam unde dicta molestiae impedit quasi earum? Ex sint impedit earum natus eum, molestiae laudantium architecto rerum modi officia eaque ratione enim nostrum autem voluptatem vel eius, quia quis et! Delectus deleniti, dolores cum molestias voluptatem ad facere doloremque atque perferendis, assumenda, a pariatur similique odit tenetur ratione eveniet maiores eos modi culpa saepe maxime. Accusantium eos dolorem cupiditate dolor fuga!</p>
+						<button id="EULA-decline">Decline</button>
+						<button id="EULA-accept">Accept</button>
+					</div>
+				</div>
+				<!-- End User Agreement End-->
 
-            <!-- Password Recovery Form Start (Absolute Position)-->
-            <div class="forgot-password hide-label" id="forgot-password">
-                <div class="close-icon" id="close-icon">
-                    <span class="material-symbols-outlined close-icon">close</span>
-                </div>
-                <form class="form-div-recovery" id="form-login-login">
-                    <div class="password-recovery-input" id="password-recovery-input">
-                        <label for="account-recovery">enter email address below</label>
-                        <input type="email" placeholder="sample@email.com" id="account-recovery" />
-                    </div>
-                    <div class="password-recovery-input" id="password-recovery-input">
-                        <button type="submit">Submit</button>
-                    </div>
-                    <p>we will send you an email with a link to reset your password</p>
-                    <p>the email might take a few minutes to send</p>
-                </form>
-            </div>
-            <!-- Password Recovery Form End -->
+				<!-- Sign In Form Start -->
+				<div class="container" id="container-login">
+					<h1>Sign In</h1>
+					<div class="icon-container" id="icon-container-login">
+						<i class="fa fa-brands fa-facebook-f"></i>
+						<i class="fa fa-brands fa-google"></i>
+						<i class="fa fa-brands fa-twitter"></i>
+					</div>
+					<p>or use your account</p>
+					<form class="form-div" id="form-login-login">
+						<div class="form-input" id="form-input">
+							<label class="hide-label" for="username" id="usernameLabelLogin"
+								>Username</label>
+							<input type="text" placeholder="Username" id="usernameLogin" />
+						</div>
+						<div class="form-input" id="form-input">
+							<label class="hide-label" for="password" id="passwordLabelLogin">Password</label>
+							<input type="password" placeholder="Password" id="passwordLogin"/>
+						</div>
+						<div class="form-input" id="form-input">
+							<button type="register">Login</button>
+						</div>
+						<p>Need an account? <a href="#" id="register">Register</a></p>
+						<p><a href="#" id="forgot-password-text">Forgot Password?</a></p>
+					</form>
+				</div>
+				<!-- Sign In Form End -->
 
-            <!-- Sign In Form Start -->
-            <div class="container" id="container-login">
-                <h1>Sign In</h1>
-                <div class="icon-container" id="icon-container-login">
-                    <i class="fa fa-brands fa-facebook-f"></i>
-                    <i class="fa fa-brands fa-google"></i>
-                    <i class="fa fa-brands fa-twitter"></i>
-                </div>
-                <p>or use your account</p>
-                <form class="form-div" id="form-login-login">
-                    <div class="form-input" id="form-input">
-                        <label class="hide-label" for="username" id="usernameLabelLogin">Username</label>
-                        <input type="text" placeholder="Username" id="usernameLogin" />
-                    </div>
-                    <div class="form-input" id="form-input">
-                        <label class="hide-label" for="password" id="passwordLabelLogin">Password</label>
-                        <input type="password" placeholder="Password" id="passwordLogin" />
-                    </div>
-                    <div class="form-input" id="form-input">
-                        <button type="register">Login</button>
-                    </div>
-                    <p>need an account? <a href="#" id="register">Register</a></p>
-                    <p><a href="#" id="forgot-password-text">forgot password?</a></p>
-                </form>
-            </div>
-            <!-- Sign In Form End -->
+				<!-- Registration Form Start -->
+				<div class="container" id="container-register">
+					<h1>Registration</h1>
+					<div class="icon-container" id="icon-container-register">
+						<i class="fa fa-brands fa-facebook-f"></i>
+						<i class="fa fa-brands fa-google"></i>
+						<i class="fa fa-brands fa-twitter"></i>
+					</div>
+					<p>or use your email for registration</p>
+					<form class="form-div" id="form-login-register">
+						<div class="form-input" id="form-input">
+							<label class="hide-label" for="username" id="usernameLabelRegister">Username</label>
+							<input type="text" placeholder="Username" id="usernameRegister" />
+						</div>
+						<div class="form-input" id="form-input">
+							<label
+								class="hide-label" for="password" id="passwordLabelRegister">Password</label>
+							<input type="password" placeholder="Password" id="passwordRegister"/>
+						</div>
+						<div class="form-input" id="form-input">
+							<label class="hide-label" for="email" id="emailLabelRegister">Email</label>
+							<input type="email" placeholder="Email" id="emailRegister" />
+						</div>
+						<div class="radio-container">
+							<div class="form-radio" id="form-radio">
+								<input type="checkbox" value="radio-eula" name="radio-eula" id="radio-EULA" />
+								<label for="radio-eula"> Accept the <a href="#" id="terms-and-conditions">Terms & Conditions</a></label>
+							</div>
+							<div class="form-radio" id="form-radio">
+								<input type="checkbox" value="radio-email" name="radio-email" id="radio-email"/>
+								<label for="radio-email"> Subscribe to news letter</label>
+							</div>
+						</div>
+						<div class="form-input" id="form-input">
+							<button type="submit">Register</button>
+						</div>
+						<p>Already have an account? <a href="#" id="login">Login</a></p>
+						<p><a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">Need an Email Address?</a></p>
+					</form>
+				</div>
+				<!-- Registration Form End -->
+			</div>
+			<!-- Main Content End -->
+		</div>
 
-            <!-- Registration Form Start -->
-            <div class="container" id="container-register">
-                <h1>Registration</h1>
-                <div class="icon-container" id="icon-container-register">
-                    <i class="fa fa-brands fa-facebook-f"></i>
-                    <i class="fa fa-brands fa-google"></i>
-                    <i class="fa fa-brands fa-twitter"></i>
-                </div>
-                <p>or use your email for registration</p>
-                <form class="form-div" id="form-login-register">
-                    <div class="form-input" id="form-input">
-                        <label class="hide-label" for="username" id="usernameLabelRegister">Username</label>
-                        <input type="text" placeholder="Username" id="usernameRegister" />
-                    </div>
-                    <div class="form-input" id="form-input">
-                        <label class="hide-label" for="password" id="passwordLabelRegister">Password</label>
-                        <input type="password" placeholder="Password" id="passwordRegister" />
-                    </div>
-                    <div class="form-input" id="form-input">
-                        <label class="hide-label" for="email" id="emailLabelRegister">Email</label>
-                        <input type="email" placeholder="Email" id="emailRegister" />
-                    </div>
-                    <div class="form-input" id="form-input">
-                        <button type="submit">Register</button>
-                    </div>
-                    <p>already have an account? <a href="#" id="login">Login</a></p>
-                    <p><a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">need an email address?</a></p>
-                </form>
-            </div>
-            <!-- Registration Form End -->
-        </div>
-        <!-- Main Content End -->
-    </div>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/1a81801219.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-</body>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://kit.fontawesome.com/1a81801219.js"></script>
+		<script src="index.js"></script>
+	</body>
 </html>
